@@ -80,6 +80,6 @@ def delete_user(id):
 
     return Response(status=204, mimetype="application/json")
 
-@bp.get('/health')
+@bp.get('/health') # a beautiful change
 def health():
     return {'status': 'healthy', 'version': '1.0.1'}, 200
